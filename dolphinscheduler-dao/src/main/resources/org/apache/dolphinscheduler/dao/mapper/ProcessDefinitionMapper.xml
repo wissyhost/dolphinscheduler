@@ -92,11 +92,7 @@
         select
         <include refid="baseSql"/>
         from t_ds_process_definition
-<<<<<<< Updated upstream
-        where project_code = #{projectCode}
-=======
         <!-- where project_id = #{projectId} -->
->>>>>>> Stashed changes
         order by create_time desc
     </select>
     <select id="queryDefinitionListByTenant" resultType="org.apache.dolphinscheduler.dao.entity.ProcessDefinition">
